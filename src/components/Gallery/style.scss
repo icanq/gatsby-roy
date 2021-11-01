@@ -1,8 +1,7 @@
 .gallery-wrap {
-  background-color: #FFF468;
+  background-color: #fff468;
   margin-left: -5vw;
   margin-right: -5vw;
-  overflow-y: hidden;
 }
 
 .gallery-counter {
@@ -97,13 +96,13 @@
       }
     }
   }
-  
+
   .gallery-item-image {
     @media only screen and (max-width: 600px) {
       width: 350px;
       height: 100%;
       object-fit: cover;
-  }
+    }
     background-size: cover;
     background-position: center;
     transform-origin: center;
@@ -114,5 +113,4 @@
     transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
     filter: grayscale(100%) sepia(20%) brightness(80%);
   }
-  
 }

@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader";
 import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
 import cn from "classnames";
-import Countdown from 'react-countdown'
+import Countdown from "react-countdown";
 
 import "./style.scss";
 
@@ -47,41 +47,36 @@ export default function Footer() {
           y: 0,
           opacity: 1,
           stagger: 0,
-          ease: "power2"
+          ease: "power2",
         }
-      )
+      );
     }
   }, [reveal]);
 
   return (
-    <section className="footer" data-scroll-section>
-      <SectionHeader title="Save the date" />
-      <h1>
-        <Countdown className="location" date={new Date("2021-11-27T10:05:29.896Z")} />
-      </h1>
+    <section className="footer footer-wrapper" data-scroll-section>
+      <SectionHeader title="Location" style={{marginBottom: "10vh"}}/>
       <h1
         className={cn("location", { "is-reveal": reveal })}
         id="location-text"
         ref={ref}
       >
         <a href="https://goo.gl/maps/5o7CGZbJtYFcEurZ9">
-        @Rumah Keramik F Widyanto
+          @Rumah Keramik F Widayanto
         </a>
       </h1>
-      <h1
-        className={cn("location", { "is-reveal": reveal })}
-        id="location-text"
-        ref={ref}
-      >
-        27 November 2021
-      </h1>
-      <h1
-        className={cn("location", { "is-reveal": reveal })}
-        id="location-text"
-        ref={ref}
-      >
-        9 - 11 WIB
-      </h1>
+      <iframe
+        title="template google map"
+        src="https://maps.google.com/maps?q=Rumah%20keramik%20f%20widyanto&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        style={{
+          height: "100%",
+          width: "75vw",
+          marginTop: "5vh",
+          marginBottom: "5vh",
+        }}
+        allowFullScreen
+      ></iframe>
+      <div className="footer-wrapper"></div>
     </section>
   );
 }

@@ -5,7 +5,7 @@ import img4 from "./assets/Photos/converted/Large/4.jpeg"
 import img5 from "./assets/Photos/converted/Large/5.jpeg"
 import img6 from "./assets/Photos/converted/Large/6.jpeg"
 import img7 from "./assets/Photos/converted/Large/7.jpeg"
-import img8 from "./assets/Photos/converted/Large/8.jpeg"
+// import img8 from "./assets/Photos/converted/Large/8.jpeg"
 import img9 from "./assets/Photos/converted/Large/9.jpeg"
 import img10 from "./assets/Photos/converted/Large/10.jpeg"
 import img11 from "./assets/Photos/converted/Large/11.jpeg"
@@ -54,11 +54,11 @@ export const photos = [
     width: 3,
     height: 4
   },
-  {
-    src: img8,
-    width: 3,
-    height: 4
-  },
+  // {
+  //   src: img8,
+  //   width: 3,
+  //   height: 4
+  // },
   {
     src: img9,
     width: 3,

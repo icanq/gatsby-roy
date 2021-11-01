@@ -1,4 +1,6 @@
 .about-section {
+  text-align: center;
+
   p {
     font-size: 70px;
     line-height: 1.12;
@@ -11,6 +13,11 @@
     }
     &.is-reveal {
       opacity: 1;
+    }
+  }
+  h6 {
+    > div {
+      margin-top: 15px;
     }
   }
 }

@@ -1,15 +1,6 @@
-.footer-wrapper {
-  background-image:  url("../../assets/Photos/converted/8.jpeg");
-  margin-left: -5vw;
-  margin-right: -5vw;
-  background-size: cover;
-  filter: grayscale(100%);
-}
-
-.footer {
+.datecountdown {
   font-family: "Syncopate", sans-serif;
   text-align: center;
-  padding-bottom: 200px;
   .location {
     margin-top: 10px;
     a {
@@ -18,7 +9,7 @@
       font-size: 5vw;
       text-decoration: none;
       word-spacing: normal;
-      color: #fff468 !important;
+      color: inherit;
     }
     font-family: "Syncopate", sans-serif;
     font-weight: 600;
@@ -32,4 +23,18 @@
       opacity: 1;
     }
   }
+  
+}
+
+
+.time {
+  font-size: 32px;
+}
+
+.timerwrapper {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 40px;
 }

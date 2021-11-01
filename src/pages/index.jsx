@@ -20,7 +20,7 @@ function Onboarding() {
   const Image = (props) => {
     return (
       <img
-        style={{ display: "block" ,height: '50vh', margin: '0 auto', marginTop: '3em' }}
+        style={{ display: "block" ,height: '50vh', margin: '0 auto', marginTop: '2em' }}
         alt='balloon'
         className='balloon'
         src={props?.source}
@@ -35,8 +35,8 @@ function Onboarding() {
         style={{
           display: "block",
           margin: '0 auto',
-          marginTop: '1em',
-          width: '45vh',
+          marginTop: '0.5em',
+          width: '40vw',
           height: '100%'
         }}
         alt='title'
@@ -47,7 +47,7 @@ function Onboarding() {
       {isPopped ? <Image source={BalonGif} /> : <Image source={BalonImage} />}
       <Draggable onStop={() => imageClick()}>
         <img
-          style={{ display: "block", height: '3vh', margin: '0 auto', marginTop: '2em' }}
+          style={{ display: "block", height: '2vh', margin: '0 auto', marginTop: '2em' }}
           alt='peniti'
           className='peniti'
           src={Peniti}
@@ -55,8 +55,8 @@ function Onboarding() {
         />
       </Draggable>
       <div>
-        <span style={{display: "block", textAlign: "center", marginTop: "1.2em"}}>
-          "pecahin balon atau geser peniti"
+        <span style={{display: "block", textAlign: "center", marginTop: "1.2em", fontWeight: 300}}>
+          pecahin balon atau geser peniti
         </span>
       </div>
     </div>

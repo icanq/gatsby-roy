@@ -43,7 +43,7 @@ export default function About() {
       <p ref={ref} id="headline" style={{"marginTop": "15vh", textAlign: "right"}}  className={cn({ "is-reveal": reveal })}>
       وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُوْنَ
       </p>
-      <h6 ref={ref} id="headline" style={{"marginTop": "15px", textAlign: "left"}} className={cn({ "is-reveal": reveal })}>
+      <h6 ref={ref} id="headline" style={{"marginTop": "3vh", textAlign: "left"}} className={cn({ "is-reveal": reveal })}>
       Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah). (QS. Az-Zariyat Ayat 49)
       </h6>
     </section>

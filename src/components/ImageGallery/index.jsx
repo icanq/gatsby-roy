@@ -21,13 +21,12 @@ export default function ImageGallery () {
 
   return (
     <section>
+      <SectionHeader title="our moments"/>
       <div
-       style={{"maxWidth": "40vw"}}
        className={cn("gallery-item-wrapper", { "is-reveal": onScreen })}
        ref={ref}
        data-scroll-section>
-        <SectionHeader title={"our moments"}/>
-        <Gallery photos={photos}/>
+        <Gallery margin={0} photos={photos}/>
       </div>
     </section>
   )

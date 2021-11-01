@@ -1,14 +1,30 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+/**
+ * 
+ * Urutan
+ * 1. Foto Pembuka Jepang
+ * 2. Bismillah & Ayat
+ * 3. Foto Roy & Nesya
+ * 4. Save the Date
+ * 5. 3 Foto kaya yumna
+ * 6. Info Akad dan Ramah tamah
+ * 7. Our Moment
+ * 8. Protokol
+ * 9. Lokasi
+ * 10. Ucapan
+ * 
+ */
+import useLocoScroll from "../hooks/useLocoScroll";
 
-import Footer from "../components/Footer";
-import CustomCursor from "../CustomCursor";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Featured from "../components/Featured";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
-import useLocoScroll from "../hooks/useLocoScroll";
+import DateCountdown from "../components/DateCountdown/index"
+
 import Couples from "../components/Couples/index";
 
 import "../styles/home.scss";
@@ -70,11 +86,12 @@ const Home = () => {
           data-scroll-container
           ref={ref}
         >
-          {/* <Header /> */}
           <Featured />
+          <Header />
           <About />
           <Couples />
           {/* <Gallery /> */}
+          <DateCountdown />
           <ImageGallery />
           <Footer />
         </div>
