@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Loadable from "react-loadable";
 import "../styles/home.scss";
 
@@ -17,6 +18,11 @@ const HomeLazy = Loadable({
 const Index = () => {
   return (
     <>
+    <Helmet>
+      <title>
+        Roy & Nesya | Wedding
+      </title>
+    </Helmet>
       <HomeLazy />
     </>
   );

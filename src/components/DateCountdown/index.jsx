@@ -5,9 +5,9 @@ import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
 import cn from "classnames";
 import Countdown from "react-countdown";
-import {CountdownCircleTimer} from "react-countdown-circle-timer"
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import "./style.scss";
-import Timer from './timer'
+import Timer from "./timer";
 
 export default function Footer() {
   const ref = useRef(null);
@@ -65,15 +65,17 @@ export default function Footer() {
         27 November 2021
       </h1>
 
-      <h1 style={{marginTop: "5vh", marginBottom: "5vh"}}>
+      <h1 style={{ marginTop: "5vh", marginBottom: "5vh" }}>
         {/* <Countdown date={new Date("2021-11-27T10:05:29.896Z")} /> */}
-        <Timer />
+        <Timer className={cn("location", { "is-reveal": reveal })} />
       </h1>
-      
-      <div style={{ display: "flex", justifyContent: "center", "marginTop": "3vh" }}>
-        <div style={{marginRight: "4vw", marginLeft: "1vw"}}>
+
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "3vh" }}
+      >
+        <div style={{ marginRight: "4vw", marginLeft: "1vw" }}>
           <span
-            style={{"fontSize": "2vh"}}
+            style={{ fontSize: "2vh" }}
             className={cn("location", { "is-reveal": reveal })}
             id="location-text"
             ref={ref}
@@ -88,9 +90,9 @@ export default function Footer() {
             9 - 10 WIB
           </h1>
         </div>
-        <div style={{marginRight: "1vw", marginLeft: "4vw"}}>
+        <div style={{ marginRight: "1vw", marginLeft: "4vw" }}>
           <span
-            style={{"fontSize": "2vh"}}
+            style={{ fontSize: "2vh" }}
             className={cn("location", { "is-reveal": reveal })}
             id="location-text"
             ref={ref}

@@ -1,13 +1,13 @@
 
-   
 .couple-section {
   display: inline-grid;
   grid-template-columns: 5fr 5fr;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   
   @media only screen and (min-width: 600px) {
-    widt: 75vh
+    min-width: 75vh;
+    align-items: center;
   }
   img {
     clip-path: inset(100% 0% 0% 0%);
@@ -30,11 +30,13 @@
   }
 
   .couple-row-layout {
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     img {
       width: 100%;
-      // height: 125vh;
       object-fit: cover;
+    }
+    span {
+      font-size: small;
     }
   }
   .couple-column-layout {
@@ -43,7 +45,7 @@
     img {
       clip-path: circle(40%);
       width: 100%;
-      height: 125vh;
+      height: 100vh;
       object-fit: cover;
     }
     h6 {

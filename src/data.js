@@ -20,37 +20,12 @@ import img19 from "./assets/Photos/converted/Large/19.jpeg"
 
 export const photos = [
   {
-    src: img1,
-    width: 6,
-    height: 8
-  },
-  {
-    src: img2,
-    width: 3,
-    height: 4
-  },
-  {
-    src: img3,
-    width: 4,
-    height: 3
-  },
-  {
     src: img4,
     width: 3,
     height: 4
   },
   {
     src: img5,
-    width: 3,
-    height: 4
-  },
-  {
-    src: img6,
-    width: 3,
-    height: 4
-  },
-  {
-    src: img7,
     width: 3,
     height: 4
   },

@@ -6,9 +6,19 @@ import BalonImage from '../assets/images/balons.png';
 import Title from '../assets/images/title.png';
 import BalonGif from '../assets/images/balon.gif';
 import Peniti from '../assets/images/peniti.png';
+import queryString from "query-string";
+import { Helmet } from 'react-helmet';
 
-function Onboarding() {
+
+function Onboarding({location}) {
   const [isPopped, setIsPopped] = useState(false);
+  const urlSearchParams = new URLSearchParams(location.search);
+    const params = urlSearchParams.get('untuk')
+    if (typeof window !== 'undefined') {
+      if (params) {
+        localStorage.setItem("guest", params)
+      }
+    }
 
   const imageClick = () => {
     setIsPopped(true);
@@ -20,7 +30,7 @@ function Onboarding() {
   const Image = (props) => {
     return (
       <img
-        style={{ display: "block" ,height: '50vh', margin: '0 auto', marginTop: '2em' }}
+        style={{ display: "block" ,height: '45vh', margin: '0 auto', marginTop: '2em' }}
         alt='balloon'
         className='balloon'
         src={props?.source}
@@ -30,14 +40,16 @@ function Onboarding() {
   };
 
   return (
-    <div className='app'>
+    <div className='main-container'>
+      <Helmet>
+        <title>Roy Nesya</title>
+      </Helmet>
       <img
         style={{
           display: "block",
           margin: '0 auto',
           marginTop: '0.5em',
-          width: '40vw',
-          height: '100%'
+          height: '20vh'
         }}
         alt='title'
         className='balloon'
@@ -55,7 +67,7 @@ function Onboarding() {
         />
       </Draggable>
       <div>
-        <span style={{display: "block", textAlign: "center", marginTop: "1.2em", fontWeight: 300}}>
+        <span style={{display: "block", textAlign: "center", marginTop: "2vh", fontWeight: 300, fontSize: "12px"}}>
           pecahin balon atau geser peniti
         </span>
       </div>

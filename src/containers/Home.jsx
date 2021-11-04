@@ -29,11 +29,13 @@ import Couples from "../components/Couples/index";
 
 import "../styles/home.scss";
 import ImageGallery from "../components/ImageGallery";
+import Carousel, { ImageCarousel2 } from "../components/Carousel";
+import ProtocolKesehatan from "../components/Protocols";
 
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
-
+  const guestName = localStorage.getItem("guest")
 
   useLocoScroll(!preloader);
 
@@ -78,6 +80,8 @@ const Home = () => {
         <div className="loader-wrapper absolute">
           <h1>Wedding</h1>
           <h2>Roy & Nesya</h2>
+          <h6>{!guestName || guestName === null ? null : "for"}</h6>
+          <h5>{!guestName || guestName === null ? null : guestName}</h5>
         </div>
       ) : (
         <div
@@ -90,9 +94,11 @@ const Home = () => {
           <Header />
           <About />
           <Couples />
-          {/* <Gallery /> */}
+          <Carousel />
           <DateCountdown />
           <ImageGallery />
+          <ProtocolKesehatan />
+          <ImageCarousel2 />
           <Footer />
         </div>
       )}

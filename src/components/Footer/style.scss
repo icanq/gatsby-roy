@@ -2,8 +2,11 @@
   background-image:  url("../../assets/Photos/converted/8.jpeg");
   margin-left: -5vw;
   margin-right: -5vw;
-  background-size: cover;
-  filter: grayscale(100%);
+  background-size: 700px;
+  background-position: top;
+  @media only screen and (min-width: 600px) {
+    background-size: cover;
+  }
 }
 
 .footer {
@@ -18,7 +21,7 @@
       font-size: 5vw;
       text-decoration: none;
       word-spacing: normal;
-      color: #fff468 !important;
+      color: black;
     }
     font-family: "Syncopate", sans-serif;
     font-weight: 600;

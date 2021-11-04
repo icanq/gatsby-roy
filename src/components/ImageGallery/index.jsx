@@ -22,10 +22,7 @@ export default function ImageGallery () {
   return (
     <section>
       <SectionHeader title="our moments"/>
-      <div
-       className={cn("gallery-item-wrapper", { "is-reveal": onScreen })}
-       ref={ref}
-       data-scroll-section>
+      <div>
         <Gallery margin={0} photos={photos}/>
       </div>
     </section>

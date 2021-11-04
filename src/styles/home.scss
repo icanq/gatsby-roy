@@ -7,17 +7,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
 
-$bg-color: white;
-
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $bg-color;
+  background-color: white;
 }
 
 .main-container {
   padding: 0 5vw;
   // clip-path: inset(100% 0% 0% 0%);
   // backface-visibility: hidden;
+  
+}
+@media (min-width: 650px) {
+  body {
+    width: 600px;
+    margin: auto;
+  }
+    
+  
 }
 
 section {
@@ -58,6 +65,20 @@ section {
     font-style: italic;
     margin-top: 10px;
   }
+  h5 {
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Bodoni Moda", serif;
+    margin-top: 15px;
+    letter-spacing: 1.2px;
+  }
+  h6 {
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
+    margin-top: 15px;
+  }
 }
 
 .font-display {
@@ -66,6 +87,13 @@ section {
 
 .balloon {
   animation: float 6s ease-in-out infinite;
+}
+
+.backgroundkuning {
+  background-color: #fff468;
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding: 5vw;
 }
 
 @keyframes float {

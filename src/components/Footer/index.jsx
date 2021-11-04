@@ -62,7 +62,7 @@ export default function Footer() {
         ref={ref}
       >
         <a href="https://goo.gl/maps/5o7CGZbJtYFcEurZ9">
-          @Rumah Keramik F Widayanto
+          @Rumah Keramik F Widayanto, Depok
         </a>
       </h1>
       <iframe
