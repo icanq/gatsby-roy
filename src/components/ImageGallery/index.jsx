@@ -25,7 +25,8 @@ export default function ImageGallery () {
       <div>
         <Gallery margin={0} photos={photos}/>
       </div>
-      <div className='quotes'>
+      <div className={cn("quotes", { "is-reveal": reveal })}
+      data-scroll-section>
       it's the time for us to grow old together and having a blast marriage with full of blessings and happiness -
       </div>
     </section>
