@@ -87,7 +87,7 @@ export default function Footer() {
             id="location-text"
             ref={ref}
           >
-            9 - 10 WIB
+            9.00 - 10.00 WIB
           </h1>
         </div>
         <div style={{ marginRight: "1vw", marginLeft: "4vw" }}>
@@ -104,7 +104,7 @@ export default function Footer() {
             id="location-text"
             ref={ref}
           >
-            10 - 14 WIB
+            10.30 - 13.00 WIB
           </h1>
         </div>
       </div>

@@ -80,7 +80,7 @@ const Home = () => {
         <div className="loader-wrapper absolute">
           <h1>Wedding</h1>
           <h2>Roy & Nesya</h2>
-          <h6>{!guestName || guestName === null ? null : "for"}</h6>
+          <h6>{!guestName || guestName === null ? null : "to"}</h6>
           <h5>{!guestName || guestName === null ? null : guestName}</h5>
         </div>
       ) : (
