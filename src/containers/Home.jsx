@@ -31,6 +31,7 @@ import "../styles/home.scss";
 import ImageGallery from "../components/ImageGallery";
 import Carousel, { ImageCarousel2 } from "../components/Carousel";
 import ProtocolKesehatan from "../components/Protocols";
+import Closing from "../components/Closing";
 
 const Home = () => {
   const ref = useRef(null);
@@ -100,6 +101,7 @@ const Home = () => {
           <ProtocolKesehatan />
           <ImageCarousel2 />
           <Footer />
+          <Closing />
         </div>
       )}
     </>
