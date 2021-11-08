@@ -69,8 +69,8 @@ export default function Footer() {
         title="template google map"
         src="https://maps.google.com/maps?q=Rumah%20keramik%20f%20widyanto&t=&z=15&ie=UTF8&iwloc=&output=embed"
         style={{
-          height: "100%",
-          width: "75vw",
+          height: "120%",
+          width: "80vw",
           marginTop: "5vh",
           marginBottom: "5vh",
         }}

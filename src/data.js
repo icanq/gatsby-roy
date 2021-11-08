@@ -29,6 +29,16 @@ export const photos = [
     width: 3,
     height: 4
   },
+  {
+    src: img6,
+    width: 3,
+    height: 4
+  },
+  {
+    src: img7,
+    width: 3,
+    height: 4
+  },
   // {
   //   src: img8,
   //   width: 3,
@@ -79,14 +89,14 @@ export const photos = [
     width: 3,
     height: 4
   },
-  {
-    src: img19,
-    width: 4,
-    height: 3
-  },
-  {
-    src: img18,
-    width: 4,
-    height: 3
-  },
+  // {
+  //   src: img19,
+  //   width: 4,
+  //   height: 3
+  // },
+  // {
+  //   src: img18,
+  //   width: 4,
+  //   height: 3
+  // },
 ];
